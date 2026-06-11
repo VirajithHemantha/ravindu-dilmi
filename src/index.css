@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&family=Inter:wght@100..900&family=Cinzel&family=Montserrat&family=Playball&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-script: "Great Vibes", cursive;
+  --font-sans: "Inter", sans-serif;
+  --font-cinzel: "Cinzel", serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-playball: "Playball", cursive;
+
+  --color-gold-light: #FCE8B2;
+  --color-gold: #D4AF37;
+  --color-gold-dark: #AA7C11;
+  --color-sage: #D4AF37;
+  --color-paper: #FFFFFF;
+
+  --color-brown-base: #3D2A25;
+  --color-brown-dark: #2A1C19;
+  --color-brown-light: #523B35;
+
+  --color-theme-50: #FFFDF9;
+  --color-theme-100: #FDF4DF;
+  --color-theme-200: #FAE5B3;
+  --color-theme-300: #F5D68C;
+  --color-theme-400: #EFB85B;
+  --color-theme-500: #D4AF37;
+  --color-theme-600: #E5C158;
+  --color-theme-700: #F1D37C;
+  --color-theme-800: #FADFA1;
+  --color-theme-900: #FFF1D1;
+}
+
+:root {
+  background-color: #2a1c19;
+  color: #D4AF37;
+  font-family: var(--font-montserrat);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.serif {
+  font-family: var(--font-serif);
+}
+
+.script {
+  font-family: var(--font-script);
+}
+
+.clip-path-envelope {
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+}
+
+.clip-path-envelope-bottom {
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+
+/* 3D Transform Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Custom scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #3d2a25;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 10px;
+}
